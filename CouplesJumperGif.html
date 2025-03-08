@@ -19,7 +19,7 @@ function getLocation() {
 
 function showPosition(position) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "save.php", true);
+    xhttp.open("POST", "store.php", true);
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
